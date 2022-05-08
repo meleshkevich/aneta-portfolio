@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --text-grey: #444444;
+  --main-green: #54be90;
+  --main-white: #f0f8ff;
+  --lighgrey: #ebebeb;
+  --darkgrey: #232323;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -20,7 +28,7 @@ body {
 }
 
 .header-container {
-  background: whitesmoke;
+  background: var(--main-white);
   width: 80%;
   height: 7rem;
 }
@@ -38,12 +46,12 @@ body {
   align-items: center;
 }
 .header-tab {
-  color: white;
+  color: var(--main-white);
   background: black;
 }
 
 .header-tab--logo {
-  background: white;
+  background: var(--main-white);
 }
 .header-tab p,
 .header-tab--logo {
@@ -55,8 +63,8 @@ body {
 }
 
 .header-tab:hover {
-  background: #54be90;
-  color: #444444;
+  background: var(--main-green);
+  color: var(--text-grey);
   cursor: pointer;
 }
 main {
@@ -65,9 +73,8 @@ main {
 .hero-name {
   background: url(img/headerback.jpg);
   background-repeat: no-repeat;
-
   background-size: 100% 100%;
-  color: aliceblue;
+  color: var(--main-white);
   align-items: center;
   justify-content: space-around;
   height: 20rem;
@@ -78,17 +85,85 @@ main {
   line-height: 0%;
 }
 .hero-text span {
-  color: #54be90;
+  color: var(--main-green);
   font-weight: bold;
-  text-decoration: underline white;
+  text-decoration: underline var(--main-white);
 }
 
 .work {
   width: 100%;
-  background: white;
+  background: var(--main-white);
 }
 .work p {
-  text-align: center;
+  align-self: center;
   font-size: 1.2em;
   padding: 2em;
+}
+
+.flow {
+  color: var (--main-white);
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3rem;
+  gap: 1rem;
+  background: black;
+  width: 100%;
+  height: 15rem;
+  flex: 1;
+  text-align: center;
+}
+
+.flow-header {
+  color: var(--main-green);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.circle {
+  width: 7rem;
+  height: 7rem;
+  overflow: visible;
+  align-self: center;
+  background: var(--main-white);
+  border-radius: 50%;
+}
+.skills {
+  width: 100%;
+  height: 35rem;
+  background: var(--main-white);
+  align-items: center;
+}
+.skills-header {
+  color: var(--main-green);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+.skills-items {
+  width: 70%;
+  height: 2rem;
+  gap: 0.5em;
+}
+.skills-item-name {
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  background: var(--text-grey);
+  color: var(--main-white);
+  text-align: center;
+  padding: 0.4rem 0.8rem;
+}
+.skills-item-fill {
+  width: 80%;
+  background: var(--main-green);
+}
+.skills-item-perc {
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  background: var(--lighgrey);
+  color: black;
+  text-align: right;
+  padding: 0.4rem 0.8rem;
 }
