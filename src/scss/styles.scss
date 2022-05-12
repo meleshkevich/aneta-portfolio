@@ -262,7 +262,6 @@ main {
 //Find me
 .find-me {
   background-color: black;
-
   align-items: center;
   height: 18em;
   padding-top: 1em;
@@ -273,7 +272,49 @@ main {
   }
   .find-me-pics {
     width: 50%;
-
     justify-content: space-between;
   }
+}
+//Contact
+.contact {
+  width: 100%;
+  height: 30em;
+  background-color: $main-green;
+  align-items: center;
+  padding: 2em;
+  .contact-header {
+    color: $main-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+}
+//form styles
+form {
+  width: 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-input {
+  width: 10%;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: $lighgrey;
+}
+& .form-input-message {
+  width: 100%;
+  height: 10em;
+  padding: 12px 20px;
+  resize: none;
+  color: $lighgrey;
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 0.8em;
+  margin: 0.5em 0.125em;
+
+  border-bottom: 2px solid blue;
+  background-color: $main-green;
+  color: white;
 }
