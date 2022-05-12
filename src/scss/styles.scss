@@ -259,3 +259,21 @@ main {
     }
   }
 }
+//Find me
+.find-me {
+  background-color: black;
+
+  align-items: center;
+  height: 18em;
+  padding-top: 1em;
+  .find-me-header {
+    text-transform: uppercase;
+    color: $main-white;
+    font-size: 2em;
+  }
+  .find-me-pics {
+    width: 50%;
+
+    justify-content: space-between;
+  }
+}
