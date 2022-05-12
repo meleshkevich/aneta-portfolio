@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+$text-grey: #444444;
+$main-green: #54be90;
+$main-white: #f0f8ff;
+$lighgrey: #ebebeb;
+$darkgrey: #232323;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Alegreya Sans", sans-serif;
+  background: black;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//Header-nav
+.header-container {
+  background: $main-white;
+  width: 80%;
+  height: 7rem;
+  .header-bar {
+    justify-content: space-between;
+    width: inherit;
+    height: 3rem;
+    flex-grow: 1;
+    .header-tab,
+    .header-tab--logo {
+      width: 20rem;
+      height: 3em;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.header-tab {
+  color: $main-white;
+  background: black;
+
+  &.header-tab:hover {
+    background: $main-green;
+    color: $text-grey;
+    cursor: pointer;
+  }
+}
+
+.header-tab--logo {
+  background: $main-white;
+}
+.header-tab p,
+.header-tab--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+//I am Aneta
+main {
+  width: 80%;
+}
+.hero-name {
+  background: url(/img/headerback.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: $main-white;
+  align-items: center;
+  justify-content: space-around;
+  height: 20rem;
+}
+.hero-text {
+  text-align: left;
+  font-size: 2.5em;
+  line-height: 0%;
+  &.hero-text span {
+    color: $main-green;
+    font-weight: bold;
+    text-decoration: underline $main-white;
+  }
+}
+
+.work {
+  width: 100%;
+  background: $main-white;
+  &.work p {
+    align-self: center;
+    font-size: 1.2em;
+    padding: 2em;
+  }
+}
+
+//Work flow section with circules
+.flow {
+  color: $main-white;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3rem;
+  margin-bottom: 2em;
+  gap: 1rem;
+  background: black;
+  width: 100%;
+  height: 15rem;
+  flex: 1;
+  text-align: center;
+}
+
+.flow-header {
+  color: $main-green;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.circle {
+  width: 7rem;
+  height: 7rem;
+  overflow: visible;
+  align-self: center;
+  background: $main-white;
+  border-radius: 50%;
+  margin-top: -4em;
+}
+
+//My skills section
+.skills {
+  width: 100%;
+  height: 35rem;
+  background: $main-white;
+  align-items: center;
+  .skills-header {
+    color: $main-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+.skills-items {
+  width: 70%;
+  height: 2rem;
+  gap: 0.5em;
+  .skills-item-name {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background: $text-grey;
+    color: $main-white;
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+  }
+  .skills-item-fill {
+    width: 80%;
+    background: $main-green;
+  }
+  .skills-item-perc {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background: $lighgrey;
+    color: black;
+    text-align: right;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+//Portfolilo section
+.portfolio {
+  width: 100%;
+  background: $main-green;
+  .portfolio-header {
+    color: $main-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    justify-content: center;
+  }
+}
+
+.portfolio-items {
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  .portfolio-item {
+    width: 30%;
+    background: $main-white;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    .portfolio-item-text {
+      background: $lighgrey;
+      padding: 0.6rem;
+      text-align: block;
+      &.portfolio-item-text span {
+        font-weight: bold;
+      }
+    }
+  }
+}
